@@ -1,0 +1,30 @@
+<!-- <div class="entries">
+    {% for entry in entries %}
+        <div class="journal-entry" id="entry-{{ entry.id }}">
+            <h2 class="entry-title">{{ entry.title }}</h2>
+            <p class="entry-content">{{ entry.content }}</p>
+            <small class="entry-date">Created at: {{ entry.created_at }}</small>
+            <div class="entry-actions">
+                <form action="{% url 'delete_entry' entry.id %}" method="POST" hx-post="{% url 'delete_entry' entry.id %}" hx-target="#entry-{{ entry.id }}" hx-swap="outerHTML">
+                    {% csrf_token %}
+                    <button type="submit" class="delete-btn">Delete</button>
+                </form>
+                <button class="edit-btn" hx-get="{% url 'edit_entry_form' entry.id %}" hx-target="#entry-form-container" hx-swap="innerHTML">Edit</button>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+<form
+  action="{% url 'create-entry' %}"
+  method="POST"
+  hx-post="{% url 'create-entry' %}"
+  hx-target="#journal-container"
+  hx-swap="outerHTML"
+  class="entry-form"
+>
+  {% csrf_token %}
+  <input type="hidden" name="entry_id" value="{{ entry.id }}">
+  <input type="text" name="title" value="{{ entry.title }}" placeholder="Entry Title" required class="form-input">
+  <textarea name="content" placeholder="Write your journal entry" required class="form-textarea">{{ entry.content }}</textarea>
+  <button type="submit" class="save-btn">Save Entry</button>
+</form> -->

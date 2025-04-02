@@ -1,0 +1,39 @@
+/* Entry blocks styling */
+input, textarea {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 12px; /* Slightly increased padding for better spacing */
+    border: 2px solid #b61b1b; /* Enhanced border thickness */
+    border-radius: 8px; /* Smoother rounded corners */
+    width: 100%;
+    margin-bottom: 20px; /* Increased margin for better separation */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Added subtle shadow for depth */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions on focus */
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #4CAF50; /* Border changes color when focused */
+    box-shadow: 0px 4px 8px rgba(76, 175, 80, 0.4); /* Slight glow effect */
+    outline: none; /* Removes default focus outline */
+  }
+  
+  /* Button styling */
+  button {
+    background: linear-gradient(to right, #4CAF50, #45a049); /* Gradient background */
+    color: white;
+    padding: 12px 24px; /* Slightly larger button size */
+    font-size: 18px; /* Bigger, clearer font size */
+    border: none;
+    border-radius: 8px; /* Matches rounded corners of inputs */
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s; /* Smooth hover transitions */
+  }
+  
+  button:hover {
+    background: linear-gradient(to right, #45a049, #4CAF50); /* Reverse gradient effect */
+    transform: scale(1.05); /* Button grows slightly on hover */
+  }
+  
+  button:active {
+    transform: scale(0.98); /* Button shrinks slightly when clicked */
+  }
